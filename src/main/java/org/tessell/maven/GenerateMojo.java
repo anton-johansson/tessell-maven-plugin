@@ -31,7 +31,7 @@ public class GenerateMojo extends AbstractMojo {
   private String resourcesPackageName;
 
   @Parameter
-  private String[] additionalViewgenFiles;
+  private String[] additionalViewgenFiles = new String[0];
 
   @Override
   public void execute() throws MojoExecutionException, MojoFailureException {
