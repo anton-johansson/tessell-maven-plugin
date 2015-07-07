@@ -40,7 +40,7 @@ public class GenerateMojo extends AbstractMojo {
 
   @Override
   public void execute() throws MojoExecutionException, MojoFailureException {
-	project.addCompileSourceRoot(outputDirectory.getAbsolutePath());
+    project.addCompileSourceRoot(outputDirectory.getAbsolutePath());
     try {
       Generator generator = new Generator(inputDirectory, outputDirectory);
       generator.setViewsPackageName(viewsPackageName);
